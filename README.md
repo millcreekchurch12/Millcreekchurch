@@ -1,131 +1,100 @@
-# Millcreek Church Utah — Website
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Young Adults | Millcreek Church Utah</title><link rel="stylesheet" href="../css/style.css"/></head>
+<body><!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <a href="tel:8012785683">(801) 278-5683</a>
+    <a href="campus.html">Campus Map</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.facebook.com/pages/Millcreek-Baptist-Church/105877852786914" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <div class="topbar-right"><a href="give.html" class="tb-give">Give Online</a></div>
+</div>
+<nav>
+  <div class="nav-wrap">
+    <a class="nav-logo" href="../index.html">
+      <div class="logo-mark"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polygon points="11,2 2,20 20,20" stroke="white" stroke-width="1.8" fill="none" stroke-linejoin="round"/><line x1="11" y1="2" x2="11" y2="0" stroke="white" stroke-width="1.8" stroke-linecap="round"/><line x1="9" x2="13" y1="1" y2="1" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+      <div class="logo-text"><b>Millcreek Church</b><small>Millcreek, Utah · SBC</small></div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="vision.html">About <span class="caret">▼</span></a>
+        <div class="dd"><a href="jesus.html">Jesus</a><a href="vision.html">Vision &amp; Mission</a><a href="beliefs.html">Beliefs</a><a href="pastor.html">Our Pastor</a><a href="contact.html">Staff &amp; Contact</a></div>
+      </li>
+      <li><a href="new.html">Get Involved <span class="caret">▼</span></a>
+        <div class="dd"><a href="new.html">I'm New</a><a href="next-steps.html">Next Steps</a><a href="worship.html">Worship</a><a href="groups.html">Groups</a><a href="midweek.html">Midweek</a><a href="serve.html">Serve</a></div>
+      </li>
+      <li><a href="ministries.html">Ministries <span class="caret">▼</span></a>
+        <div class="dd"><a href="adults.html">Adults</a><a href="men.html">Millcreek Men</a><a href="women.html">Millcreek Women</a><a href="young-adults.html">Young Adults</a><a href="next-gen.html">Next Gen (4th–College)</a><a href="kids.html">Kids (Birth–3rd Grade)</a><a href="special-needs.html">Special Needs</a><a href="counseling.html">Biblical Counseling</a><a href="discipleship.html">Discipleship</a><a href="missions.html">Missions</a><a href="music.html">Music</a><a href="pastoral.html">Pastoral Care</a><a href="prayer.html">Prayer</a><a href="recreation.html">Recreation</a></div>
+      </li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="resources.html">Resources <span class="caret">▼</span></a>
+        <div class="dd"><a href="resources.html#app">App</a><a href="resources.html#bible">Bible</a><a href="resources.html#blog">Blog</a><a href="resources.html#bookstore">Bookstore</a><a href="resources.html#library">Library</a><a href="resources.html#espanol">Español</a></div>
+      </li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="give.html" class="give-btn">Give</a></li>
+    </ul>
+    <button class="hamburger" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <button class="mob-close" id="mc">&times;</button>
+  <div class="mob-hd">About</div>
+  <a href="jesus.html">Jesus</a><a href="vision.html">Vision &amp; Mission</a><a href="beliefs.html">Beliefs</a><a href="pastor.html">Our Pastor</a><a href="contact.html">Contact</a>
+  <div class="mob-hd">Get Involved</div>
+  <a href="new.html">I'm New</a><a href="next-steps.html">Next Steps</a><a href="worship.html">Worship</a><a href="groups.html">Groups</a><a href="midweek.html">Midweek</a><a href="serve.html">Serve</a>
+  <div class="mob-hd">Ministries</div>
+  <a href="adults.html">Adults</a><a href="men.html">Men</a><a href="women.html">Women</a><a href="young-adults.html">Young Adults</a><a href="next-gen.html">Next Gen</a><a href="kids.html">Kids</a><a href="special-needs.html">Special Needs</a><a href="counseling.html">Counseling</a><a href="discipleship.html">Discipleship</a><a href="missions.html">Missions</a><a href="music.html">Music</a><a href="pastoral.html">Pastoral Care</a><a href="prayer.html">Prayer</a><a href="recreation.html">Recreation</a>
+  <div class="mob-hd">More</div>
+  <a href="media.html">Media</a><a href="resources.html">Resources</a><a href="events.html">Events</a><a href="give.html">Give Online</a>
+</div>
 
-A full multi-page church website built in the style of bellevue.org, adapted for **Millcreek Church Utah** (Southern Baptist Convention).
-
-## Live Site
-Once deployed, your site will be live at:
-`https://YOUR-USERNAME.github.io/millcreek-church/`
-
-## File Structure
-```
-millcreek-church/
-├── index.html              ← Home page
-├── .nojekyll               ← Required for GitHub Pages
-├── README.md               ← This file
-├── css/
-│   └── style.css           ← Shared stylesheet (used by all pages)
-└── pages/
-    ├── jesus.html
-    ├── vision.html
-    ├── beliefs.html
-    ├── pastor.html
-    ├── new.html
-    ├── next-steps.html
-    ├── worship.html
-    ├── groups.html
-    ├── midweek.html
-    ├── serve.html
-    ├── ministries.html
-    ├── adults.html
-    ├── men.html
-    ├── women.html
-    ├── young-adults.html
-    ├── next-gen.html
-    ├── kids.html
-    ├── special-needs.html
-    ├── counseling.html
-    ├── discipleship.html
-    ├── missions.html
-    ├── music.html
-    ├── pastoral.html
-    ├── prayer.html
-    ├── recreation.html
-    ├── media.html
-    ├── events.html
-    ├── resources.html
-    ├── give.html
-    ├── campus.html
-    └── contact.html
-```
-
-## How to Deploy
-
-### Step 1 — Create a new GitHub repository
-1. Go to [github.com/new](https://github.com/new)
-2. Name it: `millcreek-church`
-3. Set to **Public**
-4. Do NOT check "Add a README" (we already have one)
-5. Click **Create repository**
-
-### Step 2 — Upload the files
-**Option A — Upload via GitHub website (easiest):**
-1. In your new repo, click **Add file → Upload files**
-2. Drag and drop the entire contents of this folder
-3. Make sure to include the `css/` folder and `pages/` folder
-4. Write commit message: `Initial site upload`
-5. Click **Commit changes**
-
-**Option B — Using Git (command line):**
-```bash
-git init
-git add .
-git commit -m "Initial Millcreek Church website"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/millcreek-church.git
-git push -u origin main
-```
-
-### Step 3 — Enable GitHub Pages
-1. In your repo, go to **Settings** (top menu)
-2. Click **Pages** in the left sidebar
-3. Under **Source**, select **Deploy from a branch**
-4. Choose **main** branch and **/ (root)** folder
-5. Click **Save**
-6. Wait 2–5 minutes
-
-### Step 4 — Your site is live!
-Visit: `https://YOUR-USERNAME.github.io/millcreek-church/`
-
-## After Deployment — What to Update
-
-### 1. Replace photo placeholders
-Search for `📷` in any HTML file — those are photo placeholder sections.
-Replace with real photos by changing the `background-image` URL or `<img src="">` tag.
-
-### 2. Set up Stripe for online giving
-In `pages/give.html`, find these lines and replace with your real Stripe Payment Links:
-```javascript
-'One-Time': 'https://buy.stripe.com/REPLACE_ONETIME'
-'Weekly':   'https://buy.stripe.com/REPLACE_WEEKLY'
-'Monthly':  'https://buy.stripe.com/REPLACE_MONTHLY'
-```
-Get your links at: stripe.com → Dashboard → Payment Links → New Link
-
-### 3. Add sermon videos
-In `pages/media.html`, replace the video placeholder div with a YouTube embed:
-```html
-<iframe width="100%" height="400"
-  src="https://www.youtube.com/embed/YOUR-VIDEO-ID"
-  frameborder="0" allowfullscreen></iframe>
-```
-
-### 4. Update contact email
-Replace `church@millcreekchurchutah.com` with your real church email.
-
-### 5. Custom domain (optional)
-If you have a domain like `millcreekchurchutah.com`:
-1. Go to repo **Settings → Pages → Custom domain**
-2. Type your domain and save
-3. At your domain registrar, add these DNS A records:
-   ```
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
-
-## Millcreek Church Info
-- **Address:** 1515 E 4500 S, Millcreek, UT 84124
-- **Phone:** (801) 278-5683
-- **Facebook:** facebook.com/pages/Millcreek-Baptist-Church/105877852786914
-- **Affiliation:** Southern Baptist Convention
+<div class="breadcrumb"><a href="../index.html">Home</a><span>›</span>Young Adults</div>
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=600');"></div>
+  <div class="page-hero-inner">
+    <p class="eye eye-lt anim anim-1">Ministries</p>
+    <h1 class="anim anim-2">Young Adults</h1>
+    <p class="anim anim-3">A vibrant community for young adults navigating faith, career, and relationships.</p>
+  </div>
+</div>
+<section class="sec">
+  <div class="sec-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="reveal">
+        <p class="eye">Ministry</p>
+        <h2 class="stitle" style="margin-bottom:1rem;">Young Adults</h2>
+        <p style="color:var(--text-muted);margin-bottom:1.25rem;">A vibrant community for young adults navigating faith, career, and relationships.</p>
+        <p style="color:var(--text-muted);margin-bottom:1.5rem;">At Millcreek Church, every ministry is rooted in Scripture, fueled by prayer, and focused on pointing people to Jesus Christ — the living water who satisfies every thirst.</p>
+        <div class="quote-box" style="margin-bottom:1.5rem;">Let no one despise you for your youth, but set the believers an example in speech and conduct.<p style="font-size:.75rem;color:var(--aqua);font-weight:700;margin-top:.4rem;">— 1 Timothy 4:12</p></div>
+        <a class="btn btn-blue" href="contact.html">Get Connected</a>
+      </div>
+      <div class="reveal"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=600" alt="Young Adults" style="width:100%;height:400px;object-fit:cover;"/></div>
+    </div>
+  </div>
+</section>
+<div class="scr-banner" style="background-image:url('https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&q=80&w=1600');"><div class="scr-inner"><p class="eye eye-lt eye-ctr reveal" style="margin-bottom:1.25rem;">Scripture</p><blockquote class="reveal">"Each of you should use whatever gift you have received to serve others."</blockquote><cite class="reveal">— 1 Peter 4:10</cite></div></div>
+<div class="cta-strip"><div style="max-width:620px;margin:0 auto;"><p>Interested in Young Adults? Contact us to learn more.</p><a class="btn btn-blue" href="contact.html">Contact Us</a></div></div><footer>
+  <div class="ft">
+    <div class="fb"><div class="fbn">Millcreek Church</div><div class="fbs">A House of Prayer · SBC</div><p>1515 E 4500 S<br>Millcreek, UT 84124<br>(801) 278-5683</p></div>
+    <div class="fcol"><h4>Campus</h4><a href="campus.html">Campus Map</a><a href="contact.html">Employment</a><a href="contact.html">Weddings</a></div>
+    <div class="fcol"><h4>Get Involved</h4><a href="new.html">I'm New</a><a href="next-steps.html">Membership</a><a href="worship.html">Worship</a><a href="groups.html">Groups</a><a href="serve.html">Serve</a><a href="missions.html">Missions</a></div>
+    <div class="fcol"><h4>Resources</h4><a href="resources.html">App</a><a href="resources.html">Blog</a><a href="contact.html">Newsletter</a><a href="media.html">Sermons</a><a href="resources.html">Español</a><a href="give.html">Give</a></div>
+    <div class="fcol"><h4>More</h4><a href="beliefs.html">Beliefs</a><a href="contact.html">Privacy Policy</a><a href="missions.html">Missions</a><a href="give.html">Foundation</a><a href="contact.html">Contact Us</a></div>
+  </div>
+  <div class="fbot">
+    <p>&copy; 2026 Millcreek Church Utah · Southern Baptist Convention · All rights reserved.</p>
+    <div class="fsoc"><a href="https://www.facebook.com/pages/Millcreek-Baptist-Church/105877852786914" target="_blank" rel="noopener"><svg width="12" height="14" viewBox="0 0 12 14" fill="white"><path d="M8 1H6C4.9 1 4 1.9 4 3v2H2v2.5h2V13h2.5V7.5H8L8.5 5H6.5V3.5c0-.3.2-.5.5-.5H8V1z"/></svg></a></div>
+  </div>
+</footer>
+<script>
+const ham=document.getElementById('ham'),mob=document.getElementById('mob'),mc=document.getElementById('mc');
+ham.addEventListener('click',()=>mob.classList.add('open'));
+mc.addEventListener('click',()=>mob.classList.remove('open'));
+mob.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>mob.classList.remove('open')));
+const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});},{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+</script>
+</body></html>

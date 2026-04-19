@@ -81,38 +81,29 @@
             <h3 style="font-family:Merriweather,serif;font-size:1.15rem;font-weight:700;color:var(--white);">Make a Gift</h3>
           </div>
           <div style="padding:1.75rem;">
-            <div style="display:flex;border:2px solid var(--border);margin-bottom:1.5rem;overflow:hidden;">
-              <button onclick="setF(this)" style="flex:1;padding:.65rem 0;background:var(--blue-deep);color:var(--white);border:none;cursor:pointer;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;" class="ftab active">One-Time</button>
-              <button onclick="setF(this)" style="flex:1;padding:.65rem 0;background:transparent;border:none;border-left:1px solid var(--border);cursor:pointer;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--text-muted);" class="ftab">Weekly</button>
-              <button onclick="setF(this)" style="flex:1;padding:.65rem 0;background:transparent;border:none;border-left:1px solid var(--border);cursor:pointer;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--text-muted);" class="ftab">Monthly</button>
-            </div>
-            <span style="font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-bright);font-weight:700;margin-bottom:.55rem;display:block;">Select an amount</span>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;margin-bottom:.65rem;">
-              <button onclick="pA(this,'25')" style="padding:.7rem 0;background:var(--crystal);border:2px solid var(--border2);cursor:pointer;font-family:Merriweather,serif;font-size:.97rem;font-weight:700;color:var(--text-mid);">$25</button><button onclick="pA(this,'50')" style="padding:.7rem 0;background:var(--crystal);border:2px solid var(--border2);cursor:pointer;font-family:Merriweather,serif;font-size:.97rem;font-weight:700;color:var(--text-mid);">$50</button><button onclick="pA(this,'100')" style="padding:.7rem 0;background:var(--crystal);border:2px solid var(--border2);cursor:pointer;font-family:Merriweather,serif;font-size:.97rem;font-weight:700;color:var(--text-mid);">$100</button><button onclick="pA(this,'250')" style="padding:.7rem 0;background:var(--crystal);border:2px solid var(--border2);cursor:pointer;font-family:Merriweather,serif;font-size:.97rem;font-weight:700;color:var(--text-mid);">$250</button><button onclick="pA(this,'500')" style="padding:.7rem 0;background:var(--crystal);border:2px solid var(--border2);cursor:pointer;font-family:Merriweather,serif;font-size:.97rem;font-weight:700;color:var(--text-mid);">$500</button><button onclick="pA(this,'')" style="padding:.7rem 0;background:var(--crystal);border:2px solid var(--border2);cursor:pointer;font-family:Merriweather,serif;font-size:.97rem;font-weight:700;color:var(--text-mid);">Other</button>
-            </div>
-            <div style="position:relative;margin-bottom:1.4rem;">
-              <span style="position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:var(--blue-mid);font-size:1rem;font-weight:700;">$</span>
-              <input type="number" id="camt" value="100" min="1" style="width:100%;padding:.75rem .85rem .75rem 1.9rem;background:var(--crystal);border:2px solid var(--border2);color:var(--text);font-size:1rem;outline:none;" oninput="upd()"/>
-            </div>
-            <select id="fsel" style="width:100%;padding:.75rem .85rem;background:var(--crystal);border:2px solid var(--border2);color:var(--text);font-size:.9rem;outline:none;margin-bottom:1.25rem;">
-              <option>General Fund (Tithes &amp; Offerings)</option>
-              <option>Missions &amp; Outreach</option>
-              <option>Building &amp; Facilities</option>
-              <option>Youth Ministry</option>
-              <option>Community Service Fund</option>
-            </select>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:.6rem;">
-              <div><label style="font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue-bright);font-weight:700;display:block;margin-bottom:.28rem;">First Name</label><input type="text" placeholder="Jane" style="width:100%;padding:.72rem .85rem;background:var(--crystal);border:2px solid var(--border2);font-size:.9rem;outline:none;"/></div>
-              <div><label style="font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue-bright);font-weight:700;display:block;margin-bottom:.28rem;">Last Name</label><input type="text" placeholder="Smith" style="width:100%;padding:.72rem .85rem;background:var(--crystal);border:2px solid var(--border2);font-size:.9rem;outline:none;"/></div>
-            </div>
-            <div style="margin-bottom:.75rem;"><label style="font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--blue-bright);font-weight:700;display:block;margin-bottom:.28rem;">Email Address</label><input type="email" placeholder="jane@example.com" id="gem" style="width:100%;padding:.72rem .85rem;background:var(--crystal);border:2px solid var(--border2);font-size:.9rem;outline:none;"/></div>
-            <div style="display:flex;align-items:flex-start;gap:.55rem;background:var(--crystal);border:1.5px solid var(--border2);padding:.8rem;margin-bottom:1.2rem;cursor:pointer;">
-              <input type="checkbox" id="cfe" checked style="margin-top:2px;width:15px;height:15px;flex-shrink:0;accent-color:var(--blue-mid);cursor:pointer;"/>
-              <label for="cfe" style="font-size:.8rem;color:var(--text-muted);cursor:pointer;line-height:1.5;">Add <span id="famt" style="color:var(--blue-mid);font-weight:700;">$2.50</span> to cover fees so <span style="color:var(--blue-mid);font-weight:700;">100% of my gift</span> goes directly to Millcreek Church.</label>
-            </div>
-            <button onclick="doGive()" style="width:100%;padding:1rem;background:var(--blue-mid);color:var(--white);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;border:none;cursor:pointer;transition:background .2s;">Give <span id="bamt">$102.50</span> Securely</button>
-            <div style="background:var(--crystal);border:1.5px solid var(--border2);border-left:4px solid var(--aqua);padding:.85rem 1.05rem;margin-top:1rem;">
-              <p style="font-size:.75rem;color:var(--text-mid);line-height:1.65;"><strong>⚙️ Setup required:</strong> Replace Stripe links in the JS below with your real Payment Links from <a href="https://stripe.com" style="color:var(--blue-mid);font-weight:700;" target="_blank" rel="noopener">stripe.com</a> → Dashboard → Payment Links.</p>
+
+            <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:1.5rem;line-height:1.65;">Select your giving type below. You will enter your name, email, and payment details securely on the Stripe page.</p>
+
+            <!-- ONE-TIME GIVING BUTTON -->
+            <a href="https://donate.stripe.com/6oU3cv5RydTb3gBbEO8og00" target="_blank" rel="noopener"
+               style="display:block;width:100%;padding:1.1rem;text-align:center;background:var(--blue-mid);color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;text-decoration:none;margin-bottom:.75rem;transition:background .2s;"
+               onmouseover="this.style.background='var(--blue-bright)'" onmouseout="this.style.background='var(--blue-mid)'">
+              Give One-Time →
+            </a>
+
+            <!-- MONTHLY GIVING BUTTON -->
+            <a href="https://donate.stripe.com/4gM9ATeo45mF6sNeR08og01" target="_blank" rel="noopener"
+               style="display:block;width:100%;padding:1.1rem;text-align:center;background:var(--blue-deep);color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;text-decoration:none;margin-bottom:1.25rem;transition:background .2s;"
+               onmouseover="this.style.background='var(--blue-mid)'" onmouseout="this.style.background='var(--blue-deep)'">
+              Give Monthly (Recurring) →
+            </a>
+
+            <!-- SECURE NOTE -->
+            <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;padding:.75rem;background:var(--crystal);border:1px solid var(--border2);">
+              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">🔒 SSL Encrypted</span>
+              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">✅ PCI Compliant</span>
+              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">📧 Receipt Emailed</span>
+              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">💳 Cards &amp; Bank</span>
             </div>
           </div>
         </div>
@@ -120,24 +111,13 @@
     </div>
   </div>
 </section>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-let freq='One-Time';
-function setF(b){document.querySelectorAll('.ftab').forEach(x=>{x.style.background='transparent';x.style.color='var(--text-muted)';});b.style.background='var(--blue-deep)';b.style.color='white';freq=b.textContent.trim();upd();}
-function pA(b,v){const i=document.getElementById('camt');if(v){i.value=v;}else{i.value='';i.focus();}upd();}
-function upd(){const r=parseFloat(document.getElementById('camt').value)||0;const fee=parseFloat((r*0.022+0.30).toFixed(2));const tot=parseFloat((r+fee).toFixed(2));const c=document.getElementById('cfe').checked;document.getElementById('famt').textContent='$'+fee.toFixed(2);document.getElementById('bamt').textContent='$'+(c?tot:r).toFixed(2);}
-document.getElementById('cfe').addEventListener('change',upd);upd();
-function doGive(){
-  const a=parseFloat(document.getElementById('camt').value);
-  const e=document.getElementById('gem').value.trim();
-  if(!a||a<=0){alert('Please select or enter a gift amount.');return;}
-  if(!e){alert('Please enter your email for your tax receipt.');return;}
-  const links={
-    'One-Time':'https://donate.stripe.com/6oU3cv5RydTb3gBbEO8og00',
-    'Weekly'  :'https://donate.stripe.com/6oU3cv5RydTb3gBbEO8og00',
-    'Monthly' :'https://donate.stripe.com/4gM9ATeo45mF6sNeR08og01'
-  };
-  window.open(links[freq],'_blank');
-}
+<script>
+const ham=document.getElementById('ham'),mob=document.getElementById('mob'),mc=document.getElementById('mc');
+ham.addEventListener('click',()=>mob.classList.add('open'));
+mc.addEventListener('click',()=>mob.classList.remove('open'));
+mob.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>mob.classList.remove('open')));
+const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});},{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 </script><footer>
   <div class="ft">
     <div class="fb"><div class="fbn">Millcreek Church</div><div class="fbs">A House of Prayer · SBC</div><p>1515 E 4500 S<br>Millcreek, UT 84124<br>(801) 278-5683</p></div>

@@ -82,28 +82,30 @@
           </div>
           <div style="padding:1.75rem;">
 
-            <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:1.5rem;line-height:1.65;">Select your giving type below. You will enter your name, email, and payment details securely on the Stripe page.</p>
+            <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:1.5rem;line-height:1.6;">Select your giving type below. Your name, email, amount, and payment details are entered securely on the Stripe page — no double entry needed.</p>
 
-            <!-- ONE-TIME GIVING BUTTON -->
+            <!-- ONE-TIME GIVE BUTTON -->
             <a href="https://donate.stripe.com/6oU3cv5RydTb3gBbEO8og00" target="_blank" rel="noopener"
-               style="display:block;width:100%;padding:1.1rem;text-align:center;background:var(--blue-mid);color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;text-decoration:none;margin-bottom:.75rem;transition:background .2s;"
-               onmouseover="this.style.background='var(--blue-bright)'" onmouseout="this.style.background='var(--blue-mid)'">
-              Give One-Time →
+               style="display:block;width:100%;padding:1.1rem;text-align:center;background:var(--blue-mid);color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;text-decoration:none;margin-bottom:.85rem;transition:background .2s;"
+               onmouseover="this.style.background='var(--blue-bright)'"
+               onmouseout="this.style.background='var(--blue-mid)'">
+              Give One-Time &rarr;
             </a>
 
-            <!-- MONTHLY GIVING BUTTON -->
+            <!-- MONTHLY GIVE BUTTON -->
             <a href="https://donate.stripe.com/4gM9ATeo45mF6sNeR08og01" target="_blank" rel="noopener"
                style="display:block;width:100%;padding:1.1rem;text-align:center;background:var(--blue-deep);color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;text-decoration:none;margin-bottom:1.25rem;transition:background .2s;"
-               onmouseover="this.style.background='var(--blue-mid)'" onmouseout="this.style.background='var(--blue-deep)'">
-              Give Monthly (Recurring) →
+               onmouseover="this.style.background='var(--blue-mid)'"
+               onmouseout="this.style.background='var(--blue-deep)'">
+              Give Monthly (Recurring) &rarr;
             </a>
 
-            <!-- SECURE NOTE -->
-            <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;padding:.75rem;background:var(--crystal);border:1px solid var(--border2);">
-              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">🔒 SSL Encrypted</span>
-              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">✅ PCI Compliant</span>
-              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">📧 Receipt Emailed</span>
-              <span style="font-size:.72rem;color:var(--text-muted);display:flex;align-items:center;gap:.3rem;">💳 Cards &amp; Bank</span>
+            <!-- SECURE BADGES -->
+            <div style="display:flex;align-items:center;justify-content:center;gap:1.25rem;flex-wrap:wrap;padding:.85rem;background:var(--crystal);border:1px solid var(--border2);">
+              <span style="font-size:.72rem;color:var(--text-muted);">&#128274; SSL Encrypted</span>
+              <span style="font-size:.72rem;color:var(--text-muted);">&#10003; PCI Compliant</span>
+              <span style="font-size:.72rem;color:var(--text-muted);">&#128231; Receipt Emailed</span>
+              <span style="font-size:.72rem;color:var(--text-muted);">&#128179; Cards &amp; Bank</span>
             </div>
           </div>
         </div>
@@ -111,14 +113,7 @@
     </div>
   </div>
 </section>
-<script>
-const ham=document.getElementById('ham'),mob=document.getElementById('mob'),mc=document.getElementById('mc');
-ham.addEventListener('click',()=>mob.classList.add('open'));
-mc.addEventListener('click',()=>mob.classList.remove('open'));
-mob.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>mob.classList.remove('open')));
-const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});},{threshold:0.07});
-document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
-</script><footer>
+<footer>
   <div class="ft">
     <div class="fb"><div class="fbn">Millcreek Church</div><div class="fbs">A House of Prayer · SBC</div><p>1515 E 4500 S<br>Millcreek, UT 84124<br>(801) 278-5683</p></div>
     <div class="fcol"><h4>Campus</h4><a href="campus.html">Campus Map</a><a href="contact.html">Employment</a><a href="contact.html">Weddings</a></div>
@@ -136,4 +131,4 @@ const ham=document.getElementById('ham'),mob=document.getElementById('mob'),mc=d
 ham.addEventListener('click',()=>mob.classList.add('open'));
 mc.addEventListener('click',()=>mob.classList.remove('open'));
 mob.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>mob.classList.remove('open')));
-const 
+</script>
